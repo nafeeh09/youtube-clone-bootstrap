@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #ffffff;
+            border: none;
+            margin-bottom: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            padding-bottom: 10px;
+        }
+
+        .search-bar {
+            /* width: 600px;
+            margin: auto;
+            border-radius: 20px; */
+            padding-right: 200px
+        }
+         .search-bar input.form-control {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+}
+
+.search-bar .btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: none;
+}
+
+.search-bar {
+    width: 600px;
+    margin: auto;
+    overflow: hidden; /* Prevents elements from overflowing */
+}
+
+
+        /* Filter buttons styling */
+        .filter-buttons {
+            margin: 15px 0;
+        }
+
+        .btn-category {
+            margin: 5px;
+            padding: 5px 15px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            background-color: white;
+            color: #333;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .btn-category:hover {
+            background-color: #ddd;
+        }
+
+        /* Video thumbnail and container styling */
+        .video-thumbnail {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .video-title {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        .video-details {
+            font-size: 0.9em;
+            color: gray;
+        }
+
+        .video-container {
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+       
+    .navbar-brand sup {
+        font-size: 0.6em; /* Adjust the size of the superscript */
+        vertical-align: top; /* Align it perfectly next to the logo */
+        padding-left: 160px; /* Add spacing between the logo and the superscript */
+        padding-bottom: 300px;
+    
+    }
+</style>
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo">
+                   
+                </a>
+            </div>
+            <div class="navbar-right">
+                <form class="navbar-form">
+                    <div class="input-group search-bar">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Filter Buttons -->
+    <div class="container filter-buttons text-center">
+        <button class="btn-category">All</button>
+        <button class="btn-category">Source Code</button>
+        <button class="btn-category">Music</button>
+        <button class="btn-category">Playlists</button>
+        <button class="btn-category">Interstellar</button>
+        <button class="btn-category">Meditation Music</button>
+        <button class="btn-category">Gaming</button>
+        <button class="btn-category">Text</button>
+        <button class="btn-category">Joe Hisaishi</button>
+        <button class="btn-category">C418</button>
+    </div>
+
+    <!-- Videos Grid -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 video-container"><a href="https://www.youtube.com/watch?v=QR8kuofFY7M">
+                <img src="./QR8kuofFY7M-HD.jpg" alt="Interstellar" class="video-thumbnail"></a>
+                <p class="video-title">INTERSTELLAR Soundtrack</p>
+                <p class="video-details">Soothing Sonata · 1M views · 11 months ago</p>
+            </div>
+            <div class="col-sm-4 video-container"><a href="https://www.youtube.com/watch?v=Tgat3-prVv4&t=2869s">
+                <img src="./Tgat3-prVv4-HD.jpg" alt="Netflix Clone" class="video-thumbnail"></a>
+                <p class="video-title">Netflix Clone using HTML CSS</p>
+                <p class="video-details">Ionut Cora Web Dev · 6.2K views · 1 year ago</p>
+            </div>
+            <div class="col-sm-4 video-container"><a href="https://www.youtube.com/watch?v=CLeZyIID9Bo&t=25s">
+                <img src="./CLeZyIID9Bo-HD.jpg" alt="Chill Lofi Mix" class="video-thumbnail"></a>
+                <p class="video-title">Chill Lofi Mix</p>
+                <p class="video-details">Settle · 26M views · 2 years ago</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 video-container"><a href=""></a>
+                <a href="https://www.youtube.com/watch?v=s2-WLE2trA8">
+                <img src="./s2-WLE2trA8-HD.jpg" alt="Healing Music" class="video-thumbnail"></a>
+                <p class="video-title">Healing Music</p>
+                <p class="video-details">Relaxing Channel · 500K views · 8 months ago</p>
+            </div>
+            <div class="col-sm-4 video-container">
+                <a href="https://www.youtube.com/watch?v=xRcWlA1I9z0">
+                <img src="./xRcWlA1I9z0-HD.jpg" alt="Nature Scenes" class="video-thumbnail"></a>
+                <p class="video-title">Calm Nature Scenes</p>
+                <p class="video-details">Nature Hub · 200K views · 3 weeks ago</p>
+            </div>
+            <div class="col-sm-4 video-container">
+                <a href="https://www.youtube.com/watch?v=nXY8GGObaT4">
+                <img src="./nXY8GGObaT4-HD.jpg" alt="Oceanic Views" class="video-thumbnail"></a>
+                <p class="video-title">Oceanic Views</p>
+                <p class="video-details">Oceanic Channel · 150K views · 2 months ago</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 YouTube Clone. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
